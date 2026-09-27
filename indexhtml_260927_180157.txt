@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پورتال رسمی مدرسه شفا</title>
+    <link href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #0284c7;
+            --accent-color: #f59e0b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background: #0f172a;
+            padding: 0.8rem;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 12px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20rem auto 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            border-right: 4px solid var(--accent-color);
+            padding-right: 10px;
+            margin: 2rem 0 1rem 0;
+            color: var(--primary-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card img, .card video, .card iframe {
+            width: 100%;
+            border-radius: 8px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        /* بخش فرم ثبت‌نام */
+        .form-container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        .btn-submit {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>سامانه اطلاع‌رسانی و پورتال رسمی مدرسه شفا</h1>
+        <p>پلتفرم جامع اخبار، گالری چندرسانه‌ای و ثبت‌نام رویدادها</p>
+    </header>
+
+    <nav>
+        <a href="#news">اخبار و اعلانات</a>
+        <a href="#gallery">گالری تصاویر و ویدیو</a>
+        <a href="#register">ثبت‌نام مسابقات</a>
+        <a href="#contact">ارتباط با ما</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- بخش اخبار -->
+        <h2 id="news" class="section-title">آخرین اخبار و اطلاعیه‌ها</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>شروع ثبت‌نام مسابقات علمی و فرهنگی</h3>
+                <p>دانش‌آموزان عزیز می‌توانند از طریق فرم زیر در مسابقات پایه ۹ ثبت‌نام نمایند.</p>
+            </div>
+            <div class="card">
+                <h3>برنامه کلاس‌های تقویتی و اعتکاف علمی</h3>
+                <p>جزئیات برگزاری کلاس‌های آمادگی آزمون‌ها و برنامه‌های مطالعاتی اعلام شد.</p>
+            </div>
+        </div>
+
+        <!-- بخش گالری ویدیو و عکس -->
+        <h2 id="gallery" class="section-title">گالری ویدیوها و تصاویر</h2>
+        <div class="grid">
+            <div class="card">
+                <!-- نمونه ویدیو یا کد جادهی آپارات -->
+                <iframe src="https://www.aparat.com/video/video/embed/videohash/demo/vt/frame" allowfullscreen="true"></iframe>
+                <h4 style="margin-top: 10px;">گزارش تصویری رویدادهای مدرسه</h4>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250" alt="گالری عکس">
+                <h4 style="margin-top: 10px;">آلبوم تصاویر مسابقات ورزشی</h4>
+            </div>
+        </div>
+
+        <!-- بخش فرم ثبت‌نام مسابقات -->
+        <h2 id="register" class="section-title">ثبت‌نام آنلاین در مسابقات</h2>
+        <div class="form-container">
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <div class="form-group">
+                    <label>نام و نام خانوادگی:</label>
+                    <input type="text" name="name" required placeholder="مثال: علی محمدی">
+                </div>
+                <div class="form-group">
+                    <label>پایه تحصیلی:</label>
+                    <select name="grade">
+                        <option value="9">پایه نهم</option>
+                        <option value="8">پایه هشتم</option>
+                        <option value="7">پایه هفتم</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>عنوان مسابقه:</label>
+                    <input type="text" name="competition" required placeholder="مثال: مسابقه برنامه‌نویسی / علمی">
+                </div>
+                <div class="form-group">
+                    <label>شماره تماس (جهت اطلاع‌رسانی):</label>
+                    <input type="tel" name="phone" required placeholder="09123456789">
+                </div>
+                <button type="submit" class="btn-submit">ثبت‌نام و ارسال اطلاعات</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer id="contact">
+        <p>تمامی حقوق برای مدرسه شفا محفوظ است | طراحی شده روی بستر گیت‌هاب</p>
+    </footer>
+
+</body>
+</html>
